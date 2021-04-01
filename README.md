@@ -1,3 +1,7 @@
+# Budget Tracker App
+
+This project was built following: [freeCodeCamp - Build a Budet Tracker App](https://www.freecodecamp.org/news/react-budget-tracker-app/)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
