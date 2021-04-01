@@ -1,4 +1,5 @@
 import React from 'react';
+import ExpenseItem from './ExpenseItem';
 
 const ExpenseList = () => {
     const expenses = [
@@ -30,7 +31,7 @@ const ExpenseList = () => {
     ];
 
     return (
-        <ul>
+        <ul className='list-group'>
            {expenses.map((expense) => (
                <ExpenseItem
                id={expense.id}
