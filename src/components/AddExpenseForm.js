@@ -13,10 +13,12 @@ const AddExpenseForm = () => {
                     <label htmlFor="cost">Cost</label>
                     <input required="required" type="text" className="form-control" id="cost" />
                 </div>
-                <div className="col-sm">
-                    <button type="submit" className="btn btn-primary">
-                        Save
-                    </button>
+                <div className="row">
+                    <div className="col-sm">
+                        <button type="submit" className="btn btn-primary mt-4">
+                            Save
+                        </button>
+                    </div>
                 </div>
             </div>
         </form>
