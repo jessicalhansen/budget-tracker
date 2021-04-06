@@ -1,21 +1,41 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const AddExpenseForm = () => {
+    const [name, setName] = useState('');
+    const [cost, setCost] = useState('');
+
+    const onSubmit = (event) => {
+
+    };
 
     return(
-        <form>
+        <form onSubmit={onSubmit}>
             <div className="row">
                 <div className="col-sm">
                     <label htmlFor="name">Name</label>
-                    <input required="required" type="text" className="form-control" id="name" />
+                    <input 
+                        required="required" 
+                        type="text" 
+                        className="form-control" 
+                        id="name"
+                        value={name}
+                        onChange={(event) => setName(event.target.value)} />
                 </div>
                 <div className="col-sm">
                     <label htmlFor="cost">Cost</label>
-                    <input required="required" type="text" className="form-control" id="cost" />
+                    <input 
+                        required="required" 
+                        type="text" 
+                        className="form-control" 
+                        id="cost"
+                        value={cost}
+                        onChange={(event) => setCost(event.target.value)} />
                 </div>
                 <div className="row">
                     <div className="col-sm">
-                        <button type="submit" className="btn btn-primary mt-4">
+                        <button 
+                            type="submit" 
+                            className="btn btn-primary mt-4" >
                             Save
                         </button>
                     </div>
